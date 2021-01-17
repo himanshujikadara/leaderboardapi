@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MemberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('users',[MemberController::Class,'index']);
+Route::post('user/add',[MemberController::Class,'store']);
+Route::delete('user/delete/{id?}',[MemberController::Class,'destroy']);
+Route::put('user/plus',[MemberController::Class,'plus']);
+Route::put('user/minus',[MemberController::Class,'minus']);
+Route::get('user/show/{id?}',[MemberController::Class,'show']);
