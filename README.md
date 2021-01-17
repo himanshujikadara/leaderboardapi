@@ -27,21 +27,21 @@ You should be able to see following message:
 
 ## You can now access following API end points, which you can test using Postman or other software that support API requests.
 
-** To Get Leaderboard Users list in Points Desc Order **
+**To Get Leaderboard Users list in Points Desc Order**
 
 GET `http://127.0.0.1:8000/api/users`
 
-It would return json object of particular user
+>It would return json object of particular user
 
 
-** To Get Leaderboard User Info for particular user **
+**To Get Leaderboard User Info for particular user**
 
 GET `http://127.0.0.1:8000/api/user/show/{id}` -- replace `{id}` with user id 
 
-It would return json object of particular user
+>It would return json object of particular user
 
 
-** To Add user **
+**To Add user**
 
 POST `http://127.0.0.1:8000/api/user/add` 
 
@@ -54,10 +54,10 @@ Parameters to be posted in json format:
 }
 ```
 
-It would return json object with message.
+>It would return json object with message.
 
 
-** To Plus the Point of particular user **
+**To Plus the Point of particular user**
 
 PUT `http://127.0.0.1:8000/api/user/plus` 
 
@@ -68,10 +68,10 @@ Parameters to be posted in json format (id of user to whom we want to increase p
 }
 ```
 
-It would return updated json object with user list.
+>It would return updated json object with user list.
 
 
-** To Minus the Point of particular user **
+**To Minus the Point of particular user**
 
 PUT `http://127.0.0.1:8000/api/user/minus` 
 
@@ -82,14 +82,14 @@ Parameters to be posted in json format (id of user to whom we want to decrease p
 }
 ```
 
-It would return updated json object with user list.
+>It would return updated json object with user list.
 
 
-** To Delete user **
+**To Delete user**
 
 DELETE `http://127.0.0.1:8000/api/user/delete/{id}` -- replace `{id}` with user id 
 
-It would return json object with message.
+>It would return json object with message.
 
 
 ## To execute test cases. Please follow below step:
