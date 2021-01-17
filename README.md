@@ -31,7 +31,7 @@ You should be able to see following message:
 
 GET `http://127.0.0.1:8000/api/users`
 
->It would return json object of particular user
+>It would return json object of all users
 
 
 **To Get Leaderboard User Info for particular user**
